@@ -83,4 +83,4 @@ target/
 *.png
 *.png
 notebooks/PIPELINE/config.py
-notebooks/PIPELINE/to_ignore/
+notebooks/PIPELINE/to_ignore/*
