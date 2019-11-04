@@ -80,7 +80,14 @@ target/
 
 # Mac OS-specific storage files
 .DS_Store
+
+# project specific ignore files/folders:
 *.png
-*.png
-notebooks/PIPELINE/config.py
-notebooks/PIPELINE/to_ignore/*
+notebooks/config.py
+notebooks/to_ignore/
+data/cleaned
+data/cleaned_merged_agg
+data/merged
+data/cleaned_merged
+data/raw
+data/ignore
