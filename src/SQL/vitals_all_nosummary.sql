@@ -1,4 +1,3 @@
--- modified vital_all48 by removing the between intime and intime + 2days note and the ie.subject_id in {}.
 DROP MATERIALIZED VIEW IF EXISTS vitals_all_nosummary CASCADE;
 create materialized view vitals_all_nosummary as SELECT *
 
@@ -22,9 +21,6 @@ FROM  (
   from mimiciii.icustays ie
   left join mimiciii.chartevents ce
   on ie.subject_id = ce.subject_id and ie.hadm_id = ce.hadm_id and ie.icustay_id = ce.icustay_id
-  --and ce.charttime between ie.intime and ie.intime + interval '2' day
-  --and ie.subject_id in  {} --!!THIS IS THE code to get for only specific pt. 
-  -- exclude rows marked as error
   and ce.error IS DISTINCT FROM 1
   where ce.itemid in
   (
