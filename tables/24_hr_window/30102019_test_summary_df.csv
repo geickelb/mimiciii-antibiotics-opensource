@@ -1,0 +1,6 @@
+model,auc,f1,npv,precision,recall
+XGBClassifier,0.782,0.471,0.926,0.319,0.902
+RandomForestClassifier,0.778,0.475,0.929,0.322,0.903
+LogisticRegression,0.773,0.474,0.928,0.322,0.902
+SVC,0.772,0.48,0.93,0.327,0.902
+KNeighborsClassifier,0.702,0.419,0.902,0.271,0.929
