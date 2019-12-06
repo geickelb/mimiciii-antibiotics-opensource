@@ -42,11 +42,6 @@ from
         end as label
         , charttime
         , value
-       --, case
-         -- when value = 'ART' and itemid = 50800 then 'arterial'
-         -- else null
-          --end as PaO2_flag --added in 08/17/2018
-        -- add in some sanity checks on the values
         , case
           when valuenum <= 0 then null
           when itemid = 50810 and valuenum > 100 then null -- hematocrit
@@ -61,8 +56,6 @@ from
     from mimiciii.icustays ie
     left join mimiciii.labevents le
       on le.subject_id = ie.subject_id and le.hadm_id = ie.hadm_id
-      --and le.charttime between (ie.intime - interval '6' hour) and (ie.intime + interval '2' day)
-  	  --and ie.subject_id in {} --!!THIS IS THE code to get for only specific pt. 
       and le.ITEMID in
       -- blood gases
       (
