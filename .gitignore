@@ -92,3 +92,5 @@ data/cleaned_merged
 data/raw
 data/ignore
 notebooks/03.2-clinical_variables_rerun_.ipynb
+notebooks/07.5-sofaless_modeling.ipynb
+figures.zip
