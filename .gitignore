@@ -94,8 +94,7 @@ data/ignore
 notebooks/03.2-clinical_variables_rerun_.ipynb
 notebooks/07.5-sofaless_modeling.ipynb
 figures.zip
-notebooks/copy_to_preserve_12-12-19/05-Baseline_Data_merging-Copy1.ipynb
-notebooks/copy_to_preserve_12-12-19/06-feature_aggregation-Copy1.ipynb
-notebooks/copy_to_preserve_12-12-19/06-feature_aggregation-CopyToPreserve.ipynb
-notebooks/copy_to_preserve_12-12-19/07-modeling-Copy1.ipynb
-notebooks/0?-categorical_aggregation.ipynb
+notebooks/copy_to_preserve_12-12-19
+
+tables_figures/tables/11112019_24-72_modelsummary.xlsx
+tables_figures.zip
