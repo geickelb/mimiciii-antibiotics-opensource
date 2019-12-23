@@ -56,6 +56,7 @@ from
     from mimiciii.icustays ie
     left join mimiciii.labevents le
       on le.subject_id = ie.subject_id and le.hadm_id = ie.hadm_id
+      --and le.charttime between (ie.intime - interval '6' hour) and (ie.intime + interval '1' day)
       and le.ITEMID in
       -- blood gases
       (

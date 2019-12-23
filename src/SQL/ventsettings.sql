@@ -102,6 +102,7 @@ select
       end
       )
       as SelfExtubated
+      
 from mimiciii.chartevents ce
 where ce.value is not null
 -- exclude rows marked as error
@@ -158,7 +159,6 @@ where itemid in
 );
 
 
---DROP MATERIALIZED VIEW IF EXISTS VENTDURATIONS CASCADE;
 DROP MATERIALIZED VIEW IF EXISTS VENTDURATIONS CASCADE;
 create MATERIALIZED VIEW ventdurations as
 with vd0 as
