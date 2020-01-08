@@ -55,15 +55,15 @@ patient_df= final_pt_df
 
 ###48 hour window sensitivity
 ## ## date:'30102019' ##this is just the date i used when i ran each.
-lower_window=0
-upper_window=2
-folder="48_hr_window"
+# lower_window=0
+# upper_window=2
+# folder="48_hr_window"
 
 # ##24 hour window sensitivity
 ## # date:'30102019'
-# lower_window=0
-# upper_window=1
-# folder="24_hr_window"
+lower_window=0
+upper_window=1
+folder="24_hr_window_morecases"#"24_hr_window"
 
 
 ###### 04-clinical variables cleaning parameters ####
