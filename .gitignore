@@ -100,3 +100,14 @@ notebooks/Exploratory
 tables_figures/tables/11112019_24-72_modelsummary.xlsx
 tables_figures.zip
 notebooks/Exploratory/08-timewindow_model_evalutation2.ipynb
+models/16122019_24_hr_window_morecases/finalized_xgboost.sav
+models/16122019_24_hr_window_morecases/finalized_ensemble.sav
+models/16122019_24_hr_window_morecases/finalized_knn.sav
+models/16122019_24_hr_window_morecases/finalized_logreg.sav
+models/16122019_24_hr_window_morecases/finalized_rf.sav
+models/16122019_24_hr_window_morecases/finalized_mlp.sav
+models/16122019_24_hr_window_morecases/finalized_svc.sav
+tables/16122019_24_hr_window_morecases/16122019_cv_summary_df.csv
+tables/16122019_24_hr_window_morecases/16122019_test_summary_df.csv
+notebooks/06-feature_aggregation-Copy1.ipynb
+notebooks/07-modeling-Copy1.ipynb
