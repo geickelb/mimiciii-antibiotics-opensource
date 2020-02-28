@@ -1,3 +1,6 @@
+### as of 02/14/20: needs updating to reflect 08-modeling. 
+### needed changes: tune threshold in cv, change rf plot and evaluator function to reflect this. minor changes in formatting to output plots and confusion matrix. 
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import os, sys

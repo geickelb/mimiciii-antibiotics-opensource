@@ -47,8 +47,8 @@ time_col="charttime"
 time_var= 't_0'
 patient_df= final_pt_df 
 
-###72 hour window
-## date:'10102019'
+# ###72 hour window
+# ## date:'10102019'##this is just the date i used when i ran each.
 # lower_window=0
 # upper_window=3
 # folder="72_hr_window"
@@ -60,10 +60,17 @@ patient_df= final_pt_df
 # folder="48_hr_window"
 
 # ##24 hour window sensitivity
-## # date:'30102019'
+## # date:'30102019' ##this is just the date i used when i ran each.
 lower_window=0
 upper_window=1
-folder="24_hr_window_morecases"#"24_hr_window"
+folder='24_hr_window'#"24_hr_window_morecases"#"24_hr_window"
+
+
+###30 day window (for ab free day calc) 
+## 
+# lower_window=0
+# upper_window=30
+# folder="30_day_window"
 
 
 ###### 04-clinical variables cleaning parameters ####
@@ -100,7 +107,7 @@ continuous=['daily_sofa','lactate','mingcs',
             'sodium','bilirubin','spo2',
             'sum_elix','pao2fio2ratio' #added here 11/25/19
            ]
-onetime=['yearsold','height','weight']
+onetime=['yearsold','weight'] #'height'
 
 ## for aggregations:
 low_value=['bicarbonate',
@@ -118,7 +125,7 @@ both_value=['calcium',
 'sodium',
 'wbc']
 
-hi_value= set([x for x in continuous if x not in (low_value + both_value) ])
+hi_value= set([x for x in continuous+onetime if x not in (low_value + both_value) ])
 
 
 ########## 07-modeling #########

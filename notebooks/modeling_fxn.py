@@ -8,6 +8,9 @@ from sklearn.model_selection import StratifiedKFold, GridSearchCV, RandomizedSea
 import numpy as np
 from pathlib import Path
 
+### as of 02/14/20: needs updating to reflect 08-modeling. 
+### needed changes: tune threshold in cv, change rf plot and evaluator function to reflect this. minor changes in formatting to output plots and confusion matrix. 
+
 
 ### save functions
 def save_df(df, df_name='default', rel_path='/data/final/'):
